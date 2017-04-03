@@ -1,0 +1,31 @@
+{
+  "name": "react-custom-overlay",
+  "version": "0.1.0",
+  "description": "Add custom react markers to your Google maps.",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rm -rf lib/",
+    "start": "babel src/ -d lib/ --presets es2015,react,stage-0 --source-maps inline --watch",
+    "build": "babel src/ -d lib/ --presets es2015,react,stage-0 --source-maps inline",
+    "prepublish": "npm run clean && npm run build"
+  },
+  "files": [
+    "index.js",
+    "lib"
+  ],
+  "author": "Gabe G'Sell <gabergg@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "15.2.0",
+    "react-dom": "15.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0",
+    "react": "15.2.0",
+    "react-dom": "15.2.0"
+  },
+  "dependencies": {
+    "react-router": "^3.0.0"
+  }
+}
